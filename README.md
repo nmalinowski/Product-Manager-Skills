@@ -193,6 +193,7 @@ claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 ## 📄 Docs
 
 - **[Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md)** — How to apply these skills in the Codex workspace.
+- **[Building PM Skills](docs/Building%20PM%20Skills.md)** — How we distill sources into agent-ready PM skills.
 
 ---
 
