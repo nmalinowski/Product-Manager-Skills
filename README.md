@@ -1,59 +1,111 @@
 # Product Manager Skills
 
-~~~text
-╔══════════════════════════════════════════════════════════════════════╗
-║  PRODUCT MANAGER SKILLS  v0.1                                       ║
-║  battle-tested PM frameworks for Claude Code, Cowork, Codex,        ║
-║  and AI agents                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
-~~~
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║   ██████╗ ███╗   ███╗    ███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+║   ██╔══██╗████╗ ████║    ██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+║   ██████╔╝██╔████╔██║    ███████╗█████╔╝ ██║██║     ██║     ███████╗
+║   ██╔═══╝ ██║╚██╔╝██║    ╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
+║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+║                                                                   ║
+║   29 battle-tested frameworks for AI agents                      ║
+║   Claude Code • Cowork • Codex • ChatGPT • Gemini               ║
+║                                                                   ║
+║   v0.1 • Feb 2026 • MIT License                                  ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
 
-**29 ready-to-use skills** covering everything from writing user stories to running full product strategy sessions.
+**Train AI agents to do product management work like a pro.**
+
+Write PRDs. Run discovery. Plan roadmaps. Prioritize backlogs. Break down epics. All with proven frameworks from Geoffrey Moore, Jeff Patton, Teresa Torres, Amazon, MITRE, and more.
 
 ---
 
 ## 🎯 What This Is
 
-A library of **PM skills** that teach AI agents (Claude Code, Cowork, Codex, ChatGPT, Gemini, and others) how to do product management work professionally—writing PRDs, running discovery interviews, planning roadmaps, prioritizing backlogs, and more.
+**29 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
 
-Think of it as **training materials for your AI PM partner**. Instead of explaining your process every time, the agent already knows:
-- How to structure a PRD
-- Which prioritization framework to use (and when)
-- How to run customer discovery interviews
-- How to break down epics into user stories
-- What makes a good positioning statement
+Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
+- ✅ How to structure a PRD
+- ✅ What questions to ask stakeholders
+- ✅ Which prioritization framework to use (and when)
+- ✅ How to run customer discovery interviews
+- ✅ How to break down epics using proven patterns
 
-**Result:** You work faster, with better consistency, and at a higher strategic level.
+**Result:** You work faster, with better consistency, at a higher strategic level.
 
----
-
-## 🚫 What This Is NOT
-
-- ❌ A prompt library (see [Product Manager Prompts](https://github.com/deanpeters/product-manager-prompts) for that)
-- ❌ A training course for humans
-- ❌ Generic "best practices" blog posts
-
-This is **executable PM knowledge** designed for AI agents to read and apply.
+**Works with:** Claude Code, Cowork, OpenAI Codex, ChatGPT, Gemini, and any AI agent that can read structured knowledge.
 
 ---
 
-## 💡 Why Skills Beat Prompts
+## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
-| Prompts | Skills |
-|---------|--------|
-| One-time instructions per task | Reusable frameworks learned once |
-| "Write a PRD for X" | Agent knows PRD structure, asks smart questions, handles edge cases |
-| You repeat yourself constantly | Agent remembers best practices |
-| Inconsistent outputs | Consistent, professional results |
+These 29 skills are organized into **three types** that build on each other:
 
-**Skills = Less explaining, more strategic work.**
+```
+┌────────────────────────────────────────────────────────┐
+│  WORKFLOW SKILLS (4)                                   │
+│  Complete end-to-end PM processes                      │
+│  Example: "Run a product strategy session"            │
+│  Timeline: 2-4 weeks                                   │
+└────────────────────────────────────────────────────────┘
+                         ↓ orchestrates
+┌────────────────────────────────────────────────────────┐
+│  INTERACTIVE SKILLS (10)                               │
+│  Guided discovery with adaptive questions              │
+│  Example: "Which prioritization framework should I use?"│
+│  Timeline: 30-90 minutes                               │
+└────────────────────────────────────────────────────────┘
+                         ↓ uses
+┌────────────────────────────────────────────────────────┐
+│  COMPONENT SKILLS (15)                                 │
+│  Templates for specific PM deliverables               │
+│  Example: "Write a user story"                        │
+│  Timeline: 10-30 minutes                               │
+└────────────────────────────────────────────────────────┘
+```
+
+### Component Skills (15) — Templates & Artifacts
+**What:** Reusable templates for creating specific PM deliverables (user stories, positioning statements, epics, personas, PRDs, etc.)
+
+**When to use:** You need a standard template or format for a specific deliverable.
+
+**Example:** "Write a user story with acceptance criteria" → Use [`user-story.md`](skills/components/user-story.md)
 
 ---
 
-## 📦 What's Inside (29 Skills)
+### Interactive Skills (10) — Guided Discovery
+**What:** Multi-turn conversational flows where AI asks you 3-5 adaptive questions, then offers smart recommendations based on your context.
+
+**When to use:** You need help deciding which approach to take or gathering context before executing.
+
+**Example:** "Which prioritization framework should I use?" → Run [`prioritization-advisor.md`](skills/interactive/prioritization-advisor.md), which asks about your product stage, team size, data availability, then recommends RICE, ICE, Kano, or other frameworks.
+
+**How they work:**
+1. AI asks 3-5 questions about your context
+2. You answer (or pick from numbered options)
+3. AI offers 3-5 tailored recommendations
+4. You choose one (or combine approaches)
+5. AI executes using the right component skills
+
+---
+
+### Workflow Skills (4) — End-to-End Processes
+**What:** Complete PM processes that orchestrate multiple component and interactive skills over days/weeks.
+
+**When to use:** You need to run a full PM workflow from start to finish (strategy session, discovery cycle, roadmap planning, PRD creation).
+
+**Example:** "Align stakeholders on product strategy" → Run [`product-strategy-session.md`](skills/workflows/product-strategy-session.md), which guides you through positioning → problem framing → solution exploration → roadmap planning over 2-4 weeks.
+
+---
+
+## 📦 All 29 Skills (Clickable)
+
+Now that you understand the three types, here's the complete catalog:
 
 ### 🧱 Component Skills (15)
-**Building blocks** — Templates for creating specific PM deliverables.
 
 | Skill | Use When You Need To... |
 |-------|-------------------------|
@@ -76,7 +128,6 @@ This is **executable PM knowledge** designed for AI agents to read and apply.
 ---
 
 ### 🔄 Interactive Skills (10)
-**Guided discovery** — AI asks you questions, then offers smart recommendations based on your context.
 
 | Skill | What It Does |
 |-------|--------------|
@@ -91,32 +142,9 @@ This is **executable PM knowledge** designed for AI agents to read and apply.
 | **[problem-framing-canvas](skills/interactive/problem-framing-canvas.md)** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
 | **[lean-ux-canvas](skills/interactive/lean-ux-canvas.md)** | Sets up hypothesis-driven planning (Jeff Gothelf Lean UX Canvas v2) |
 
-**How interactive skills work:**
-1. AI asks 3-5 questions about your context
-2. You answer (or pick from numbered options)
-3. AI offers 3-5 tailored recommendations
-4. You choose one (or combine approaches)
-5. AI executes with the right component skills
-
-**Example:**
-~~~
-You: "Run the Prioritization Advisor"
-
-AI: "What stage is your product in?
-1. Pre-PMF (experimenting rapidly)
-2. Early PMF (scaling fast)
-3. Mature product (optimizing)
-4. Multiple products/platform"
-
-You: "2"
-
-AI: "Based on early PMF stage, I recommend RICE prioritization..."
-~~~
-
 ---
 
 ### 🎭 Workflow Skills (4)
-**End-to-end processes** — Complete PM workflows that orchestrate multiple skills.
 
 | Skill | What It Does | Timeline |
 |-------|--------------|----------|
@@ -125,151 +153,35 @@ AI: "Based on early PMF stage, I recommend RICE prioritization..."
 | **[roadmap-planning](skills/workflows/roadmap-planning.md)** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |
 | **[prd-development](skills/workflows/prd-development.md)** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
 
-**Workflow skills orchestrate everything:**
-- `product-strategy-session` references 15+ component and interactive skills
-- `discovery-process` walks through interviews, synthesis, experiments
-- `roadmap-planning` handles OKRs, prioritization, stakeholder alignment
-- `prd-development` produces a complete, professional PRD
-
 ---
 
-## 🚀 How to Use (For Product Managers)
+## 🚀 How to Use
 
-### Option 1: Use with Claude Desktop or Claude.ai
+### With Claude Desktop or Claude.ai
 
-1. **Open a conversation** with Claude
-2. **Share the skill file** you need (e.g., "Read user-story.md")
-3. **Ask Claude to apply it:**
-   - "Using the User Story skill, write stories for our checkout flow"
-   - "Run the Prioritization Advisor for our Q2 backlog"
-   - "Follow the Discovery Process workflow to validate this problem"
+1. Open a conversation with Claude
+2. Share the skill file: "Read user-story.md"
+3. Ask Claude to apply it: "Using the User Story skill, write stories for our checkout flow"
 
-**That's it.** Claude reads the skill and applies the framework.
+### With Claude Code (CLI)
 
----
+```bash
+cd product-manager-skills
+claude "Using the PRD Development workflow, create a PRD for our mobile feature"
+```
 
-### Option 2: Use with Claude Code (CLI)
+### With OpenAI Codex, Cowork, or Other Agents
 
-If you're using Claude Code command-line tool:
+**Codex:** Load skill files into your workspace, reference by name
+**Cowork:** Import skills as knowledge modules, invoke via natural language
+**Other agents:** Follow your agent's docs for loading custom knowledge
 
-1. **Navigate to this repo:**
-   ```bash
-   cd product-manager-skills
-   ```
+### With ChatGPT, Gemini, or Any AI Chat
 
-2. **Reference skills in your prompts:**
-   ```bash
-   claude "Using the PRD Development workflow, create a PRD for our new mobile feature"
-   ```
-
-3. **For interactive skills:**
-   ```bash
-   claude "Run the Epic Breakdown Advisor to split our onboarding epic"
-   ```
-
-Claude Code will read the skill files automatically from the `/skills/` directory.
-
----
-
-### Option 3: Use with OpenAI Codex, Cowork, or Other Agent Tools
-
-**Codex (OpenAI):**
-- Load skill files into your Codex workspace
-- Reference by name: "Using the Roadmap Planning skill, build a Q2 roadmap"
-
-**Cowork (Desktop Automation):**
-- Import skills as knowledge modules
-- Invoke via natural language commands
-
-**Other AI Agents:**
-- Follow your agent's documentation for loading custom knowledge
-- Most agents support markdown file ingestion
-
----
-
-### Option 4: Copy-Paste into Any AI Chat
-
-1. **Open the skill file** (e.g., `skills/components/user-story.md`)
-2. **Copy the contents**
-3. **Paste into ChatGPT, Gemini, or any AI chat**
-4. **Ask the AI to apply it:**
-   - "Using this framework, write user stories for our new feature"
-
-Works with any AI that accepts long context.
-
----
-
-## 📚 Skill Structure (What's Inside Each File)
-
-Every skill follows the same format:
-
-~~~
-## Purpose
-What this skill does and when to use it.
-
-## Key Concepts
-Core frameworks, definitions, anti-patterns.
-
-## Application
-Step-by-step instructions (with examples).
-
-## Examples
-Real-world cases (good and bad).
-
-## Common Pitfalls
-What to avoid and why.
-
-## References
-Related skills and external frameworks.
-~~~
-
-**Clean. Practical. Zero fluff.**
-
-Each skill is:
-- ✅ **Self-contained** (no external dependencies)
-- ✅ **Actionable** (step-by-step guidance)
-- ✅ **Example-rich** (shows good and bad cases)
-- ✅ **Pitfall-aware** (warns about common mistakes)
-
----
-
-## 🏗️ Three-Tier Architecture
-
-Skills build on each other:
-
-~~~
-┌─────────────────────────────────────────┐
-│   Workflow Skills (4)                   │
-│   End-to-end processes                  │
-│   Example: "product-strategy-session"   │
-└─────────────────────────────────────────┘
-              ↓ orchestrates
-┌─────────────────────────────────────────┐
-│   Interactive Skills (10)               │
-│   Guided discovery with questions       │
-│   Example: "positioning-workshop"       │
-└─────────────────────────────────────────┘
-              ↓ uses
-┌─────────────────────────────────────────┐
-│   Component Skills (15)                 │
-│   Templates and artifacts               │
-│   Example: "user-story"                 │
-└─────────────────────────────────────────┘
-~~~
-
-**How they work together:**
-
-**Example 1: Writing User Stories**
-1. Use `user-story-splitting` (component) to break down a large epic
-2. Use `user-story` (component) to write each story with acceptance criteria
-
-**Example 2: Running Product Strategy**
-1. Use `product-strategy-session` (workflow) which:
-   - Calls `positioning-workshop` (interactive) to define positioning
-   - Calls `problem-framing-canvas` (interactive) to frame the problem
-   - Calls `opportunity-solution-tree` (interactive) to explore solutions
-   - Calls `roadmap-planning` (workflow) to sequence initiatives
-   - Uses 15+ component skills throughout
+1. Open the skill file (e.g., `skills/components/user-story.md`)
+2. Copy the contents
+3. Paste into ChatGPT/Gemini
+4. Ask: "Using this framework, write user stories for my feature"
 
 ---
 
@@ -298,23 +210,29 @@ Skills build on each other:
 
 ---
 
+## 💡 Why Skills Beat Prompts
+
+| Prompts | Skills |
+|---------|--------|
+| One-time instructions per task | Reusable frameworks learned once |
+| "Write a PRD for X" | Agent knows PRD structure, asks smart questions, handles edge cases |
+| You repeat yourself constantly | Agent remembers best practices |
+| Inconsistent outputs | Consistent, professional results |
+
+**Skills = Less explaining, more strategic work.**
+
+---
+
 ## 🌟 What Makes These Skills Different
 
 ### ✅ Battle-Tested Frameworks
-Built on proven methods from:
-- Geoffrey Moore (Crossing the Chasm)
-- Jeff Patton (User Story Mapping)
-- Teresa Torres (Continuous Discovery)
-- Amazon (Working Backwards)
-- Richard Lawrence (Story Splitting)
-- MITRE (Problem Framing)
-- And more...
+Built on proven methods from Geoffrey Moore, Jeff Patton, Teresa Torres, Amazon, Richard Lawrence, MITRE, and more.
 
 ### ✅ Real Client Work
 Based on decades of PM consulting across healthcare, finance, manufacturing, and tech.
 
 ### ✅ Agent-Ready Format
-Optimized for AI comprehension—not blog posts, not books, not courses. These are **executable frameworks**.
+Optimized for AI comprehension—not blog posts, not books, not courses. **Executable frameworks.**
 
 ### ✅ Zero Fluff
 Every word earns its keep. No filler, no buzzwords, no generic advice.
@@ -324,14 +242,42 @@ Shows both "good" and "bad" examples so you know what works and what to avoid.
 
 ---
 
+## 📚 Skill Structure (What's Inside Each File)
+
+Every skill follows the same format:
+
+```
+## Purpose
+What this skill does and when to use it.
+
+## Key Concepts
+Core frameworks, definitions, anti-patterns.
+
+## Application
+Step-by-step instructions (with examples).
+
+## Examples
+Real-world cases (good and bad).
+
+## Common Pitfalls
+What to avoid and why.
+
+## References
+Related skills and external frameworks.
+```
+
+**Clean. Practical. Zero fluff.**
+
+---
+
 ## 🤝 Contributing
 
 Found a gap? Have a PM framework you'd like to see included?
 
 **Ways to contribute:**
-- **Open an issue** with your suggestion
-- **Submit a pull request** with a new skill (we'll help you format it)
-- **Share feedback** on what's working or what's missing
+- Open an issue with your suggestion
+- Submit a pull request (we'll help you format it)
+- Share feedback on what's working or missing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
