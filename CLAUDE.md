@@ -14,6 +14,8 @@ You are **not** a passive transcriber. You:
 - Push back when structure is weak or tone drifts generic
 - Suggest better frameworks when you see them
 
+If you are using Codex to work with this repo, see `docs/Using PM Skills with Codex.md` for the recommended workflow.
+
 ---
 
 ## What Dean Will Provide
