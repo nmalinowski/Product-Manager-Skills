@@ -3,7 +3,8 @@
 ~~~text
 ╔══════════════════════════════════════════════════════════════════════╗
 ║  PRODUCT MANAGER SKILLS  v0.1                                       ║
-║  battle-tested PM frameworks for Claude and AI agents               ║
+║  battle-tested PM frameworks for Claude Code, Cowork, Codex,        ║
+║  and AI agents                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ~~~
 
@@ -13,7 +14,7 @@
 
 ## 🎯 What This Is
 
-A library of **PM skills** that teach AI agents (like Claude) how to do product management work professionally—writing PRDs, running discovery interviews, planning roadmaps, prioritizing backlogs, and more.
+A library of **PM skills** that teach AI agents (Claude Code, Cowork, Codex, ChatGPT, Gemini, and others) how to do product management work professionally—writing PRDs, running discovery interviews, planning roadmaps, prioritizing backlogs, and more.
 
 Think of it as **training materials for your AI PM partner**. Instead of explaining your process every time, the agent already knows:
 - How to structure a PRD
@@ -170,7 +171,23 @@ Claude Code will read the skill files automatically from the `/skills/` director
 
 ---
 
-### Option 3: Copy-Paste into Any AI Chat
+### Option 3: Use with OpenAI Codex, Cowork, or Other Agent Tools
+
+**Codex (OpenAI):**
+- Load skill files into your Codex workspace
+- Reference by name: "Using the Roadmap Planning skill, build a Q2 roadmap"
+
+**Cowork (Desktop Automation):**
+- Import skills as knowledge modules
+- Invoke via natural language commands
+
+**Other AI Agents:**
+- Follow your agent's documentation for loading custom knowledge
+- Most agents support markdown file ingestion
+
+---
+
+### Option 4: Copy-Paste into Any AI Chat
 
 1. **Open the skill file** (e.g., `skills/components/user-story.md`)
 2. **Copy the contents**
