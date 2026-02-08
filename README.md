@@ -10,10 +10,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
-║   34 battle-tested frameworks for AI agents                        ║
+║   41 battle-tested frameworks for AI agents                        ║
 ║   Claude Code • Cowork • Codex • ChatGPT • Gemini                  ║
 ║                                                                    ║
-║   v0.1 • Feb 2026 • CC BY-NC-SA 4.0                                ║
+║   v0.2 • Feb 2026 • CC BY-NC-SA 4.0                                ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -25,7 +25,7 @@ Write PRDs. Run discovery. Plan roadmaps. Prioritize backlogs. Break down epics.
 
 ## 🎯 What This Is
 
-**33 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
+**41 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
 
 Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
 - ✅ How to structure a PRD
@@ -70,7 +70,7 @@ Some skills include a `scripts/` folder with deterministic helpers for calculati
 
 ## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
-These 34 skills are organized into **three types** that build on each other:
+These 41 skills are organized into **three types** that build on each other:
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
@@ -95,7 +95,7 @@ These 34 skills are organized into **three types** that build on each other:
 └───────────────────────────────────────────────────────────┘
 ```
 
-### Component Skills (16) — Templates & Artifacts
+### Component Skills (19) — Templates & Artifacts
 **What:** Reusable templates for creating specific PM deliverables (user stories, positioning statements, epics, personas, PRDs, etc.)
 
 **When to use:** You need a standard template or format for a specific deliverable.
@@ -104,7 +104,7 @@ These 34 skills are organized into **three types** that build on each other:
 
 ---
 
-### Interactive Skills (14) — Guided Discovery
+### Interactive Skills (18) — Guided Discovery
 **What:** Multi-turn conversational flows where AI asks you 3-5 adaptive questions, then offers smart recommendations based on your context.
 
 **When to use:** You need help deciding which approach to take or gathering context before executing.
@@ -129,11 +129,11 @@ These 34 skills are organized into **three types** that build on each other:
 
 ---
 
-## 📦 All 34 Skills (Clickable)
+## 📦 All 41 Skills (Clickable)
 
 Now that you understand the three types, here's the complete catalog:
 
-### 🧱 Component Skills (16)
+### 🧱 Component Skills (19)
 
 | Skill | Use When You Need To... |
 |-------|-------------------------|
@@ -141,6 +141,7 @@ Now that you understand the three types, here's the complete catalog:
 | **[customer-journey-map](skills/customer-journey-map/SKILL.md)** | Map customer experience across all touchpoints (NNGroup framework) |
 | **[eol-message](skills/eol-message/SKILL.md)** | Communicate product/feature deprecation gracefully |
 | **[epic-hypothesis](skills/epic-hypothesis/SKILL.md)** | Turn vague initiatives into testable hypotheses with success metrics |
+| **[finance-metrics-quickref](skills/finance-metrics-quickref/SKILL.md)** | Fast lookup table for 32+ SaaS finance metrics with formulas, benchmarks, and when to use each |
 | **[jobs-to-be-done](skills/jobs-to-be-done/SKILL.md)** | Understand what customers are trying to accomplish (JTBD framework) |
 | **[pestel-analysis](skills/pestel-analysis/SKILL.md)** | Analyze external factors (Political, Economic, Social, Tech, Environmental, Legal) |
 | **[pol-probe](skills/pol-probe/SKILL.md)** | Define lightweight, disposable validation experiments to test hypotheses before building (Dean Peters PoL framework) |
@@ -149,6 +150,8 @@ Now that you understand the three types, here's the complete catalog:
 | **[problem-statement](skills/problem-statement/SKILL.md)** | Frame a customer problem with evidence before jumping to solutions |
 | **[proto-persona](skills/proto-persona/SKILL.md)** | Create hypothesis-driven personas before doing full research |
 | **[recommendation-canvas](skills/recommendation-canvas/SKILL.md)** | Document AI-powered product recommendations |
+| **[saas-economics-efficiency-metrics](skills/saas-economics-efficiency-metrics/SKILL.md)** | Evaluate unit economics and capital efficiency (CAC, LTV, payback, margins, burn rate, Rule of 40, magic number) |
+| **[saas-revenue-growth-metrics](skills/saas-revenue-growth-metrics/SKILL.md)** | Calculate and interpret revenue, retention, and growth metrics (revenue, ARPU, MRR/ARR, churn, NRR, expansion) |
 | **[storyboard](skills/storyboard/SKILL.md)** | Visualize user journeys with 6-frame narrative storyboards |
 | **[user-story](skills/user-story/SKILL.md)** | Write user stories with proper acceptance criteria (Mike Cohn + Gherkin) |
 | **[user-story-mapping](skills/user-story-mapping/SKILL.md)** | Organize stories by user workflow (Jeff Patton framework) |
@@ -156,16 +159,20 @@ Now that you understand the three types, here's the complete catalog:
 
 ---
 
-### 🔄 Interactive Skills (14)
+### 🔄 Interactive Skills (18)
 
 | Skill | What It Does |
 |-------|--------------|
+| **[acquisition-channel-advisor](skills/acquisition-channel-advisor/SKILL.md)** | Evaluate acquisition channels using unit economics, customer quality, and scalability. Recommends scale/test/kill decisions |
 | **[agent-orchestration-advisor](skills/agent-orchestration-advisor/SKILL.md)** | Design multi-agent workflows—break complex tasks into parallel, specialized AI agents. Covers 4 dimensions of orchestration, agent boundary design, launch control tower monitoring, and evaluation frameworks |
 | **[ai-shaped-readiness-advisor](skills/ai-shaped-readiness-advisor/SKILL.md)** | Assess if you're "AI-first" (automating tasks) or "AI-shaped" (redesigning how you work). Evaluates 5 competencies and recommends which to build first |
+| **[business-health-diagnostic](skills/business-health-diagnostic/SKILL.md)** | Diagnose SaaS business health using key metrics, identify red flags, and prioritize actions. Analyzes growth, retention, efficiency, and capital health |
 | **[context-engineering-advisor](skills/context-engineering-advisor/SKILL.md)** | Diagnose context stuffing (volume without intent) vs. context engineering (structure for attention). Guides memory architecture, retrieval strategies, and Research→Plan→Reset→Implement cycle |
 | **[customer-journey-mapping-workshop](skills/customer-journey-mapping-workshop/SKILL.md)** | Guides journey mapping with pain point identification |
 | **[discovery-interview-prep](skills/discovery-interview-prep/SKILL.md)** | Plans customer interviews (Mom Test style) based on your research goals |
 | **[epic-breakdown-advisor](skills/epic-breakdown-advisor/SKILL.md)** | Splits epics into user stories using Richard Lawrence's 9 patterns |
+| **[feature-investment-advisor](skills/feature-investment-advisor/SKILL.md)** | Evaluate feature investments using revenue impact, cost structure, ROI, and strategic value. Delivers build/don't build recommendations |
+| **[finance-based-pricing-advisor](skills/finance-based-pricing-advisor/SKILL.md)** | Evaluate pricing changes using financial impact analysis (ARPU/ARPA, conversion, churn risk, NRR, payback) |
 | **[lean-ux-canvas](skills/lean-ux-canvas/SKILL.md)** | Sets up hypothesis-driven planning (Jeff Gothelf Lean UX Canvas v2) |
 | **[opportunity-solution-tree](skills/opportunity-solution-tree/SKILL.md)** | Generates opportunities and solutions, recommends best proof-of-concept to test |
 | **[pol-probe-advisor](skills/pol-probe-advisor/SKILL.md)** | Recommends which of 5 prototype types to use based on your hypothesis and risk (Feasibility, Task-Focused, Narrative, Synthetic Data, Vibe-Coded) |

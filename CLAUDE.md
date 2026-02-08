@@ -4,13 +4,13 @@
 
 ---
 
-## Project Status (Last updated: Thu Feb 5 2026)
+## Project Status (Last updated: Sat Feb 8 2026)
 
-### Current State: v0.1 Released + Phase 6 In Progress
+### Current State: v0.2 Released + Multiple Active Phases
 
-**Released: 34 Skills (Feb 2026)**
-- 16 Component Skills (templates/artifacts)
-- 14 Interactive Skills (guided discovery)
+**Released: 41 Skills (Feb 2026)**
+- 19 Component Skills (templates/artifacts + finance metrics)
+- 18 Interactive Skills (guided discovery + finance advisors)
 - 4 Workflow Skills (end-to-end processes)
 - License: CC BY-NC-SA 4.0
 - All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)
@@ -26,16 +26,27 @@
   - `ai-maintenance-planning` (Component) — Model drift maintenance template
   - `ai-product-orchestrator` (Workflow) — Complete end-to-end AI PM process
 
+**Phase 7: Finance for Product Managers (COMPLETE)** ✅
+- ✅ **7 Skills Released (Feb 8, 2026)**
+  - Foundation: 3 component skills covering 32 SaaS finance metrics
+  - Decision Frameworks: 3 interactive advisors (feature, channel, pricing)
+  - Advanced: 1 comprehensive business health diagnostic
+  - Total: 4,290 lines across 7 skills
+  - See `docs/Finance Suite Summary.md` for complete overview
+
 **Recent Updates:**
+- ✅ **Phase 7 Complete:** 7 finance skills released (Feb 8, 2026)
 - All skills alphabetically ordered within each category (Component, Interactive, Workflow)
 - Enhanced documentation in `/docs`:
   - `Using PM Skills with Claude.md` — Comprehensive guide for Claude Code (CLI) and Claude Cowork (workspace)
   - `Using PM Skills with Codex.md` — Guide for OpenAI Codex
   - `Building PM Skills.md` — Contributor guide
+  - `Finance Suite Summary.md` — Complete overview of 7 finance skills (NEW)
 - Updated `CONTRIBUTING.md` with enhanced guidelines
 - Research documents added to `/research`:
   - `Context Engineering for Product Managers.md`
   - `The Product Manager as an Orchestrator.md`
+  - `finance/` — 4 finance research documents (3,014 lines)
 
 **Source Materials for Phase 6:**
 - Dean's Substack articles:
@@ -46,10 +57,23 @@
 - Marty Cagan: *Empowered* (4 big risks in AI era)
 - Productside Blueprint: Orchestration framework
 
+**Source Materials for Phase 7 (Finance):**
+- `research/finance/Finance for Product Managers.md` — 32 metrics with quizzes
+- `research/finance/Finance_QuickRef.md` — One-page lookup table
+- `research/finance/Finance_For_PMs.Putting_It_Together_Synthesis.md` — Decision frameworks
+- `research/finance/Finance_Metrics_Additions_Reference.md` — Common mistakes reference
+
 **What's Next:**
 - Complete remaining Phase 6 skills (evals, observability, maintenance)
 - Build final workflow skill that orchestrates all 5 AI PM disciplines
-- Potential future: Additional AI PM skills based on emerging frameworks
+- Potential Phase 8: Pricing & Monetization Suite (7 comprehensive pricing skills)
+  - Value-based pricing framework
+  - Willingness-to-pay research
+  - Packaging architecture advisor
+  - Pricing psychology guide
+  - Price testing methodology
+  - Competitive pricing analysis
+  - Monetization model advisor
 
 **Important Notes for Claude:**
 - Always check `git status` and recent commits before starting new work
