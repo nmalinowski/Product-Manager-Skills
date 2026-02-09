@@ -80,22 +80,25 @@ Custom skills are uploaded manually. Claude does not continuously sync skills fr
 The Claude Skills UI expects each uploaded skill to include a `Skill.md` file (case-sensitive). This repo stores source files as `SKILL.md`, so package first.
 
 1. **Download this repo from GitHub** (Code -> Download ZIP), then unzip it.
-2. **Prepare upload-ready skill folders**:
+2. **Build upload-ready ZIP** for the skill you want:
    ```bash
-   bash scripts/package-claude-skills.sh
+   ./scripts/zip-a-skill.sh --skill user-story
    ```
-3. **Zip one packaged skill folder** (recommended one skill per ZIP):
+   For one full category (for example component skills only):
    ```bash
-   cd dist/claude-skills
-   zip -r user-story.zip user-story
+   ./scripts/zip-a-skill.sh --type component --output dist/skill-zips
    ```
-4. **In Claude Desktop or Claude Web**:
+   For all skills at once:
+   ```bash
+   ./scripts/zip-a-skill.sh --all --output dist/skill-zips
+   ```
+3. **In Claude Desktop or Claude Web**:
    - Go to **Settings -> Capabilities -> Skills**
    - Click **Upload skill**
-   - Select the ZIP file
-5. **Enable the uploaded skill** and run a quick smoke test prompt.
+   - Select a ZIP file from `dist/skill-zips/`
+4. **Enable the uploaded skill** and run a quick smoke test prompt.
 
-The packaging script creates `dist/claude-skills/<skill-name>/Skill.md` and copies `template.md`, `examples/`, and `scripts/` when present.
+`zip-a-skill.sh` runs `package-claude-skills.sh` internally, then zips packaged folders for upload.
 
 ### Advanced Option: MCP Integrations
 

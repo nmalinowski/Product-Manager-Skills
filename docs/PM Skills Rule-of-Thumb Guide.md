@@ -56,9 +56,9 @@ Ask up to 3 clarifying questions when context is missing.
 
 ### Default B: Claude (non-technical)
 
-1. Run `bash scripts/package-claude-skills.sh`.
-2. Zip one folder from `dist/claude-skills/<skill-name>/`.
-3. Upload ZIP in Claude Skills settings.
+1. Run `./scripts/zip-a-skill.sh --skill <skill-name>`.
+2. Open `dist/skill-zips/`.
+3. Upload the ZIP in Claude Skills settings.
 
 ---
 

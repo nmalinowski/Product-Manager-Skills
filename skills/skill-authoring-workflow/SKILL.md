@@ -94,7 +94,9 @@ If this is a new skill:
 If targeting Claude custom skill upload:
 
 ```bash
-bash scripts/package-claude-skills.sh
+./scripts/zip-a-skill.sh --skill <skill-name>
+# or zip one category:
+./scripts/zip-a-skill.sh --type component --output dist/skill-zips
 ```
 
 ## Examples
@@ -144,3 +146,4 @@ Result:
 - `scripts/find-a-skill.sh`
 - `scripts/test-a-skill.sh`
 - `scripts/check-skill-metadata.py`
+- `scripts/zip-a-skill.sh`

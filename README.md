@@ -85,6 +85,7 @@ Some skills include a `scripts/` folder with deterministic helpers for calculati
 - `scripts/build-a-skill.sh` - Guided "build-a-bear" wizard that prompts section-by-section.
 - `scripts/find-a-skill.sh` - Search skills by name/type/keyword with ranked results.
 - `scripts/test-a-skill.sh` - Run strict conformance checks and optional smoke checks.
+- `scripts/zip-a-skill.sh` - Build upload-ready `.zip` files by skill, type, or all skills.
 
 **What it does:**
 1. Analyzes your content and suggests skill types
@@ -106,6 +107,15 @@ Some skills include a `scripts/` folder with deterministic helpers for calculati
 # Test one skill
 ./scripts/test-a-skill.sh --skill finance-based-pricing-advisor --smoke
 
+# Build Claude upload zip for one skill
+./scripts/zip-a-skill.sh --skill finance-based-pricing-advisor
+
+# Build Claude upload zips for all skills
+./scripts/zip-a-skill.sh --all --output dist/skill-zips
+
+# Build Claude upload zips for one category (component|interactive|workflow)
+./scripts/zip-a-skill.sh --type component --output dist/skill-zips
+
 # From clipboard
 pbpaste | ./scripts/add-a-skill.sh
 
@@ -124,7 +134,8 @@ pbpaste | ./scripts/add-a-skill.sh
 
 - Keep frontmatter `name` <= 64 chars and `description` <= 200 chars.
 - Ensure the skill folder name matches the `name` value.
-- Use `scripts/package-claude-skills.sh` to generate upload-ready `Skill.md` files.
+- Use `scripts/zip-a-skill.sh --skill <skill-name>` (or `--type component`) to generate upload-ready ZIPs.
+- (Advanced) Use `scripts/package-claude-skills.sh` if you need unpacked upload-ready folders.
 - Validate metadata with `scripts/check-skill-metadata.py`.
 - For GitHub ZIP upload flow, see [`docs/Using PM Skills with Claude.md`](docs/Using%20PM%20Skills%20with%20Claude.md#github-zip-install).
 
@@ -465,7 +476,7 @@ See [LICENSE](LICENSE) for full details.
 
 Highlights in this release:
 - 42 total skills, including Phase 7 finance skills and the new `skill-authoring-workflow`
-- New skill tooling: `add-a-skill`, `build-a-skill`, `find-a-skill`, `test-a-skill`
+- New skill tooling: `add-a-skill`, `build-a-skill`, `find-a-skill`, `test-a-skill`, `zip-a-skill`
 - New onboarding docs for Claude, Codex, ChatGPT, and non-technical "rule-of-thumb" setup
 
 Built by Dean Peters (Principal Consultant and Trainer at Productside.com) with Anthropic Claude and OpenAI Codex.

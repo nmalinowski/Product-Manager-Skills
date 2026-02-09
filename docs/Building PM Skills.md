@@ -19,6 +19,9 @@ cd Product-Manager-Skills
 
 # 4) Validate strict conformance
 ./scripts/test-a-skill.sh --skill your-skill-name --smoke
+
+# 5) Optional: Build Claude upload ZIP
+./scripts/zip-a-skill.sh --skill your-skill-name
 ```
 
 Then update `README.md` catalog entries if you added a new skill.
