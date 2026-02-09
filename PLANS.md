@@ -63,6 +63,43 @@ This enables compatibility with `~/.claude/skills/` directory and standard Anthr
 
 ---
 
+<a id="future-skill-candidates"></a>
+## 🔮 Future Skill Candidates (Detailed)
+
+Detailed expansion of the short list in [`README.md`](README.md#future-skills).
+
+### Dangerous Animals of Product Management
+**Type:** Workflow skill
+
+Feature hostage negotiations and stakeholder shuttle diplomacy. Diagnose which animal you're dealing with (HiPPOs, RHiNOs, WoLFs, oh my!), then apply tactical patterns for containment, redirection, or strategic retreat. Sometimes the hardest part of product management is not building the thing; it's surviving the meeting where everyone wants different things.
+
+### Pricing for Product Managers
+**Type:** Interactive advisor
+
+Navigating pricing decisions without the panic spiral and flop sweat. Covers value-based pricing, packaging strategy, pricing-page psychology, grandfather clause negotiations, and how to raise prices without triggering mass exodus. Nothing makes a PM panic quite like "so what should we charge for this?"
+
+### Classic Business Strategy Frameworks
+**Type:** Component skills suite
+
+Oldie-but-not-moldie strategy tools in agent-ready form: Ansoff Matrix (growth strategies), BCG Matrix (portfolio prioritization), Porter's 5 Forces (competitive analysis), Blue Ocean Strategy (uncontested market space), and SWOT done right. The frameworks your MBA friends won't shut up about, now designed to drive decisions instead of decorating slides.
+
+### Storytelling for Product Managers
+**Type:** Interactive workshop
+
+Teach PMs how to bring the drama without bringing drama. Covers narrative arc for roadmap presentations, stakeholder storytelling patterns, demo choreography, investor pitch structure, make-them-feel-the-customer-pain techniques, and Hakawati-style oration. Built on lessons from a pro-opera career: command a room, hit the high notes, and leave them wanting an encore.
+
+### Prompt Building for Product Managers
+**Type:** Component skills suite
+
+Industrial-strength prompt engineering. Build team session starters that set context and guardrails, multi-turn workflow wizards that guide complex processes step-by-step, and reverse engineering templates that reconstruct artifacts like PRDs from messy inputs. Because one-off prompts are for amateurs; repeatable prompt systems are for professionals.
+
+### Nightmares of Product Management
+**Type:** Interactive diagnostic
+
+For when things don't go as planned. Telemetry to detect early warning signs, triage protocols for severity assessment, and tactical playbooks for containment and recovery. Covers the classics: adoption theater, feature graveyards, metric manipulation, launch amnesia, and technical debt wildfires. Plus prevention strategies so you don't star in next quarter's horror story.
+
+---
+
 ## Overview
 
 This repository contains distilled PM skills extracted from Dean Peters' `product-manager-prompts` repo. Skills are organized into three types, forming a three-tier architecture:
@@ -222,7 +259,7 @@ This repository contains distilled PM skills extracted from Dean Peters' `produc
 These prompts from `product-manager-prompts` are **not** being converted into skills:
 
 - `a-generative-AI-prompt-builder-for-product-professionals.md` (meta-prompt)
-- `Dangerous Animals of Product Management Beast Generator.md` (fun/creative)
+- `Dangerous Animals of Product Management Beast Generator.md` (legacy creative generator; superseded by the structured workflow candidate above)
 - `Nightmares of Product Management Movie Title Generator Prompt.md` (fun/creative)
 - `futuristic-product-faq.md` (highly specialized)
 - `strategic-scrum-team-session-kickoff.md` (workflow—may revisit in Phase 5)

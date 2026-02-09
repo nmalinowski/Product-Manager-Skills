@@ -1,3 +1,4 @@
+<a id="pmskills"></a>
 # Product Manager Skills
 
 ```text
@@ -252,6 +253,20 @@ Now that you understand the three types, here's the complete catalog:
 | **[prd-development](skills/prd-development/SKILL.md)** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
 | **[product-strategy-session](skills/product-strategy-session/SKILL.md)** | Full strategy: positioning → problem framing → solution exploration → roadmap | 2-4 weeks |
 | **[roadmap-planning](skills/roadmap-planning/SKILL.md)** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |
+
+<a id="future-skills"></a>
+### 🔮 Agent Skills of the Future
+
+**_Possible skills in development:_**
+
+- **Dangerous Animals of Product Management** - Feature hostage negotiations and stakeholder shuttle diplomacy for when you're facing HiPPOs, RHiNOs, and WoLFs (_oh my!_).
+- **Pricing for Product Managers** - Value-based pricing, packaging strategy, price increases, and grandfather clause negotiations without the panic spiral and flop sweat.
+- **Classic Business Strategy Frameworks** - Ansoff, BCG, Porter's 5 Forces, Blue Ocean, and SWOT in agent-ready format that helps you decide, not decorate slides.
+- **Storytelling for Product Managers** - Narrative arc, demo choreography, and pitch structure built on pro-opera lessons and Hakawati orations for commanding the room.
+- **Prompt Building for Product Managers** - Industrial-strength prompt engineering: team session starters, multi-turn workflow wizards, and reverse engineering templates for artifacts like PRDs.
+- **Nightmares of Product Management** - Telemetry, triage, and tactics for when things don't go as planned: adoption theater, feature graveyards, metric manipulation, launch amnesia, technical debt wildfires. Plus prevention strategies.
+
+Detailed concept notes live in [`PLANS.md`](PLANS.md#future-skill-candidates).
 
 ---
 
