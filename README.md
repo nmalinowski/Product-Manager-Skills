@@ -307,9 +307,11 @@ cd product-manager-skills
 claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 ```
 
+You can discover via `npx skills find <query>` and `npx skills add deanpeters/Product-Manager-Skills --list`, then install for Claude Code. See [Using PM Skills with Claude](docs/Using%20PM%20Skills%20with%20Claude.md).
+
 ### With OpenAI Codex
 
-Use either local workspace paths or GitHub-connected Codex on ChatGPT. See [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md).
+Use local workspace paths, GitHub-connected Codex on ChatGPT, or discover/install directly with `npx skills`. See [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md).
 
 ### With ChatGPT
 

@@ -1,10 +1,10 @@
 # Marketplace Strategy — Product Manager Skills
 
-**Last Updated:** February 6, 2026
+**Last Updated:** February 10, 2026
 **Status:** Quality Audit Complete ✅ | Ready for Submission
-**Next Review:** February 7, 2026
+**Next Review:** February 17, 2026
 
-## 🚀 Next Session Action Items (Feb 7, 2026)
+## 🚀 Next Session Action Items (Feb 10, 2026)
 
 **Priority 1: Get GitHub Stars (SkillsMP Requirement)**
 - [ ] Share repo on LinkedIn with PM network
@@ -19,8 +19,8 @@
 - [ ] Add GitHub topics: `product-management`, `claude-skills`, `ai-agents`, `pm-frameworks`
 
 **Priority 3: Strategic Decisions Needed**
-- [ ] Decide: Monetization approach (Free+Consulting vs. Freemium vs. PWYW)
-- [ ] Decide: Submit all 34 skills to Anthropic or curate 5 "showcase" skills first?
+- [x] Decide: Monetization approach (Free+Consulting vs. Freemium vs. PWYW)
+- [x] Decide: Curate 5 "showcase" skills for Anthropic first (instead of submitting all 40+)
 - [ ] Review: Do any 200-char descriptions need optimization for clarity?
 
 ---
@@ -38,10 +38,10 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 **Validation Script:** `scripts/check-skill-metadata.py`
 
 ### What Was Checked
-- ✅ **YAML Frontmatter:** All 34 skills have valid frontmatter
+- ✅ **YAML Frontmatter:** All 40+ skills have valid frontmatter
 - ✅ **Name Field:** Present and ≤ 64 characters (all skills)
 - ✅ **Description Field:** Present and ≤ 200 characters (all skills)
-- ✅ **Folder Names:** Match frontmatter `name` values (all 34 skills)
+- ✅ **Folder Names:** Match frontmatter `name` values (all 40+ skills)
 
 ### Sample Validation Results
 | Skill | Name Length | Description Length | Status |
@@ -99,7 +99,38 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ### Primary Targets
 
-#### 1. **SkillsMP** — Agent Skills Marketplace
+#### 1. **Skills.sh** — The Open Agent Skills Directory
+- **URL:** https://skills.sh/
+- **Status:** Active, 200+ skills indexed
+- **Compatible With:** Claude Code, Codex, VS Code Copilot, Cursor, and 20+ agent platforms
+- **Pricing Model:** Free (open ecosystem)
+- **Submission Process:** None - GitHub is the registry (skills installable immediately)
+- **Installation:** `npx skills add deanpeters/Product-Manager-Skills@<skill-name>`
+- **Discovery Features:**
+  - CLI-native discovery: `npx skills find <query>`
+  - Direct installation from GitHub repos
+  - Agent-agnostic (works across platforms)
+  - Automatic leaderboard via anonymous telemetry
+
+**Why This Matters:**
+- **Already live** - All 40+ skills are installable right now
+- **Zero friction** - No approval, no waiting, no submission
+- **Foundation layer** - Other marketplaces use skills.sh for installation
+- **Ecosystem standard** - The "npm for agent skills"
+
+**Action Items:**
+- ✅ Already live and installable (public repo = immediate availability)
+- ✅ Documentation complete (installation covered in Claude/Codex docs)
+- 📋 Share installation commands in announcements (LinkedIn, Substack)
+- 📋 Monitor appearance on https://skills.sh/deanpeters/Product-Manager-Skills
+- 📋 Organic discovery through community sharing and installs
+
+**Positioning:**
+"Several dozen production-ready PM skills, instantly installable via `npx skills add`"
+
+---
+
+#### 2. **SkillsMP** — Agent Skills Marketplace
 - **URL:** https://skillsmp.com/
 - **Status:** Active, 145,000+ skills indexed
 - **Compatible With:** Claude Code, Codex CLI, ChatGPT
@@ -124,7 +155,7 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ---
 
-#### 2. **SkillHub** — Claude Skills & Agent Skills Marketplace
+#### 3. **SkillHub** — Claude Skills & Agent Skills Marketplace
 - **URL:** https://www.skillhub.club/
 - **Status:** Active, 7,000+ AI-evaluated skills
 - **Compatible With:** Claude, Codex, Gemini, OpenCode
@@ -149,7 +180,7 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ---
 
-#### 3. **ClaudeSkills.ai** — The Marketplace for Claude AI Skills
+#### 4. **ClaudeSkills.ai** — The Marketplace for Claude AI Skills
 - **URL:** https://claudeskills.ai/
 - **Status:** Waitlist / Early Access
 - **Compatible With:** Claude AI (all platforms)
@@ -169,7 +200,7 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ---
 
-#### 4. **Anthropic Official Skills Repository**
+#### 5. **Anthropic Official Skills Repository**
 - **URL:** https://github.com/anthropics/skills
 - **Status:** Active (official Anthropic repo)
 - **Compatible With:** Claude Code, Claude AI
@@ -197,12 +228,12 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ### Secondary Targets
 
-#### 5. **Agent Skills Market**
+#### 6. **Agent Skills Market**
 - **URL:** https://www.agentskillsmarket.space/
 - **Status:** Active (#1 Agent Skills Library for Claude AI & LLMs 2025)
 - **Action Items:** 📋 Research submission process
 
-#### 6. **Awesome Claude Skills (GitHub)**
+#### 7. **Awesome Claude Skills (GitHub)**
 - **URL:** https://github.com/travisvn/awesome-claude-skills
 - **Status:** Active (3,200+ stars)
 - **Submission Process:** Pull request to add link
@@ -211,7 +242,7 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
   - 📋 Add Product Manager Skills to relevant category
   - 📋 Submit PR with description and link
 
-#### 7. **ChatPRD** — AI Platform for Product Managers
+#### 8. **ChatPRD** — AI Platform for Product Managers
 - **URL:** https://www.chatprd.ai/
 - **Status:** Active (popular PM-specific tool)
 - **Action Items:** 📋 Explore partnership/integration opportunities
@@ -220,11 +251,31 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 
 ## 📋 Rollout Plan
 
+### Phase 0: Skills.sh (Already Live) ✅
+**Goal:** Leverage the already-live installation channel
+
+- [x] **Immediate Availability** ✅ COMPLETE
+  - [x] All 40+ skills installable via `npx skills add deanpeters/Product-Manager-Skills@<skill-name>`
+  - [x] CLI discovery working: `npx skills find product management`
+  - [x] Documentation complete in Claude/Codex guides
+  - [x] GitHub is the registry (no submission needed)
+
+- [ ] **Community Activation** (This Week)
+  - [ ] Include CLI install commands in LinkedIn announcement
+  - [ ] Add CLI install examples to Substack article
+  - [ ] Share in PM communities (Reddit, Slack) with install commands
+  - [ ] Monitor skills.sh leaderboard for appearance
+
+**Positioning Message:**
+"Several dozen production-ready PM skills, instantly installable for Claude Code, Codex, and 20+ agent platforms via `npx skills add`"
+
+---
+
 ### Phase 1: Preparation (Week 1)
-**Goal:** Ensure skills are marketplace-ready
+**Goal:** Optimize for additional marketplace discovery
 
 - [x] **Quality Audit** ✅ COMPLETE (Feb 6, 2026)
-  - [x] Run `scripts/check-skill-metadata.py` on all skills — All 34 pass
+  - [x] Run `scripts/check-skill-metadata.py` on all skills — All 40+ pass
   - [x] Verify all skills have proper YAML frontmatter — Validated
   - [x] Ensure `name` ≤ 64 chars, `description` ≤ 200 chars — Confirmed
   - [ ] Validate all cross-references between skills — TODO
@@ -258,11 +309,25 @@ This document outlines AI skill marketplaces where Product Manager Skills can be
 - [ ] Demo link (video or screenshots)
 - [ ] Tags/keywords (product management, discovery, roadmap, PRD, metrics, GTM)
 
-**Standard Listing Blurb (Draft)**
+**Standard Listing Blurb (Updated)**
 ```md
-Product Manager Skills is a curated set of 34 practical, agent-ready skills for PMs.
-Use them to improve discovery, prioritization, roadmapping, and PRD quality.
-All skills are open-source and structured for immediate use in Claude/Codex workflows.
+Product Manager Skills — Several dozen production-ready PM frameworks for AI agents.
+
+Install instantly via `npx skills add deanpeters/Product-Manager-Skills@<skill-name>` or browse at
+https://github.com/deanpeters/Product-Manager-Skills
+
+Includes discovery workflows, prioritization advisors, finance metrics, roadmap planning, PRD templates,
+and interactive decision frameworks. All skills are open-source (CC BY-NC-SA 4.0) and work with Claude Code,
+Codex, VS Code Copilot, Cursor, and 20+ agent platforms.
+
+Featured: finance-metrics-quickref, discovery-process, context-engineering-advisor, pol-probe-advisor
+```
+
+**Short Version (for limited-character listings):**
+```md
+Several dozen production-ready PM skills for AI agents. Discovery workflows, prioritization frameworks,
+finance metrics, roadmap planning. Instantly installable via npx skills add. Works with Claude Code,
+Codex, and 20+ platforms.
 ```
 
 ---
@@ -315,7 +380,7 @@ All skills are open-source and structured for immediate use in Claude/Codex work
   - Cross-post to relevant Slack/Discord communities (Lenny's, Product School, etc.)
 
 - [ ] **Content Marketing**
-  - Write Substack article: "34 AI Skills Every PM Should Have"
+  - Write Substack article: "Several Dozen AI Skills Every PM Should Have"
   - Create YouTube tutorial (or partner with PM influencer)
   - Guest post on PM blogs (Mind the Product, Product Coalition, etc.)
 
@@ -393,14 +458,14 @@ All skills are open-source and structured for immediate use in Claude/Codex work
 - If monetization is required, consider dual-licensing or a separate paid bundle with a commercial-friendly license
 
 ### Option A: Free + Consulting (Recommended)
-- All 34 skills remain **free and open-source**
+- All 40+ skills remain **free and open-source**
 - Use as lead generation for Productside consulting
 - Offer paid workshops: "Mastering AI-Assisted Product Management"
 - Premium support tier: $99/month (priority support, custom skill development)
 
 ### Option B: Freemium Model
 - **Free Tier:** 20 core skills (user-story, positioning-statement, etc.)
-- **Pro Tier:** All 34 skills + future additions ($19/month or $149/year)
+- **Pro Tier:** All 40+ skills + future additions ($19/month or $149/year)
 - **Enterprise Tier:** Custom skills, team training, white-label ($499/month)
 
 ### Option C: Pay-What-You-Want
@@ -415,7 +480,7 @@ All skills are open-source and structured for immediate use in Claude/Codex work
 ## 📚 Resources for Submission
 
 ### Required Files (Already Have)
-- ✅ Individual `SKILL.md` files (34 skills)
+- ✅ Individual `SKILL.md` files (40+ skills)
 - ✅ YAML frontmatter with `name`, `description`, `type`
 - ✅ Templates and examples separated (recent refactor)
 - ✅ Optional scripts (deterministic, documented)
@@ -434,6 +499,9 @@ All skills are open-source and structured for immediate use in Claude/Codex work
 ## 🔗 References
 
 ### Marketplace Research
+- [Skills.sh — The Open Agent Skills Directory](https://skills.sh/)
+- [Skills.sh Documentation](https://skills.sh/docs)
+- [Agent Skills Standard (agentskills.io)](https://agentskills.io/)
 - [SkillsMP — Agent Skills Marketplace](https://skillsmp.com/)
 - [SkillHub — Claude Skills Marketplace](https://www.skillhub.club/)
 - [ClaudeSkills.ai](https://claudeskills.ai/)
@@ -451,38 +519,51 @@ All skills are open-source and structured for immediate use in Claude/Codex work
 
 ## 📞 Next Steps
 
-**Immediate Actions (This Week):**
-1. Run quality audit (`scripts/check-skill-metadata.py`)
-2. Achieve 2+ GitHub stars (share with PM community)
-3. Fork and PR to `awesome-claude-skills`
-4. Join ClaudeSkills.ai waitlist
+**Phase 0 is Live** ✅
+- All 40+ skills already installable via skills.sh
+- No submission, approval, or waiting required
+- Focus: community activation and sharing
 
-**Questions to Resolve:**
-- Do we want to monetize, or keep 100% free?
-- Should we submit all 34 skills to Anthropic, or curate a subset?
-- What's our brand positioning: "Open-source PM skills" vs. "Premium PM training"?
+**Immediate Actions (This Week):**
+1. ✅ Quality audit complete (`scripts/check-skill-metadata.py`)
+2. 📋 Launch announcement with CLI install commands (LinkedIn, Substack)
+3. 📋 Share in PM communities with `npx skills add` examples
+4. 📋 Fork and PR to `awesome-claude-skills`
+5. 📋 Achieve 2+ GitHub stars (unlocks SkillsMP auto-indexing)
+6. 📋 Join ClaudeSkills.ai waitlist
+
+**Strategic Decisions:**
+- ✅ Monetization: Free + Consulting (lead gen for Productside)
+- 📋 Anthropic submission: Curate 5 showcase skills (user-story, prioritization-advisor, discovery-process, pol-probe-advisor, context-engineering-advisor)
+- ✅ Brand positioning: "Production-ready PM skills for agent-assisted workflows"
 
 ---
 
 ## 📊 Summary
 
 ### What We Have
-✅ **34 marketplace-ready skills** (all validated)
-✅ **Comprehensive rollout plan** (4 phases over 3 weeks)
-✅ **5 target marketplaces identified** (SkillsMP, SkillHub, Anthropic, Awesome Claude Skills, ClaudeSkills.ai)
+✅ **40+ marketplace-ready skills** (all validated, Feb 6, 2026)
+✅ **Phase 0 LIVE** - Skills.sh installation working right now
+✅ **Comprehensive rollout plan** (Phase 0-4 over 3 weeks)
+✅ **6 target marketplaces identified** (Skills.sh, SkillsMP, SkillHub, Anthropic, Awesome Claude Skills, ClaudeSkills.ai)
 ✅ **Quality audit complete** (all metadata requirements met)
+✅ **Documentation complete** (installation covered in Claude/Codex guides)
 
-### What We Need
-⏳ **2+ GitHub stars** to trigger SkillsMP auto-indexing
-📋 **PR to Awesome Claude Skills** (quick visibility win)
-🤔 **Strategic decisions** on monetization and curation approach
+### What We're Activating
+🚀 **Skills.sh ecosystem** - Already installable, needs community sharing
+⏳ **2+ GitHub stars** - Unlocks SkillsMP auto-indexing
+📋 **PR to Awesome Claude Skills** - Quick visibility win
+📋 **Anthropic curated submission** - 5 showcase skills for official repo
 
-### Recommended Path Forward (Feb 7, 2026)
-1. **Morning:** Share repo to get stars (LinkedIn, Reddit, Slack)
-2. **Afternoon:** Submit PR to Awesome Claude Skills
-3. **Evening:** Make strategic decisions, prepare Anthropic submission
+### Recommended Path Forward (Feb 10, 2026)
+1. **Launch announcement** - Include `npx skills add` commands in LinkedIn/Substack
+2. **Community sharing** - Reddit, PM Slack communities, with install examples
+3. **Quick wins** - Awesome Claude Skills PR, GitHub stars campaign
+4. **Curated submission** - Prepare 5 showcase skills for Anthropic repo
 
-**Timeline:** First listings live within 7-10 days
+**Timeline:** Phase 0 live now, additional listings within 7-10 days
+
+**Positioning:** "Several dozen production-ready PM skills, instantly installable for Claude Code, Codex, and 20+ agent platforms"
 
 ---
 

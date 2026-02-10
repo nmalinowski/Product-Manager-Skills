@@ -3,6 +3,7 @@
 Codex can apply these skills directly from your repo files. There are two practical paths:
 - Local workspace (Codex in your coding environment)
 - Codex on ChatGPT (`chatgpt.com/codex`) with GitHub connected
+- Skills marketplace install via `npx skills`
 
 ---
 
@@ -60,6 +61,75 @@ Using skills/<skill-name>/SKILL.md:
 
 ---
 
+## Option 3: Install from skills.sh (No Local Clone Required)
+
+If you prefer marketplace-style installation, use the Skills CLI.
+
+Discover first:
+
+```bash
+npx skills find product management
+npx skills add deanpeters/Product-Manager-Skills --list
+```
+
+Install for Codex:
+
+```bash
+npx skills add deanpeters/Product-Manager-Skills --skill <skill-name> -a codex -g
+```
+
+Examples:
+
+```bash
+npx skills add deanpeters/Product-Manager-Skills --skill user-story -a codex -g
+npx skills add deanpeters/Product-Manager-Skills --skill prd-development -a codex -g
+npx skills add deanpeters/Product-Manager-Skills --skill finance-based-pricing-advisor -a codex -g
+```
+
+Equivalent GitHub URL form (also supported on skills.sh pages):
+
+```bash
+npx skills add https://github.com/deanpeters/Product-Manager-Skills --skill <skill-name>
+```
+
+Show installed skills for Codex:
+
+```bash
+npx skills list -a codex
+```
+
+### Pairing with Repo Utilities (Recommended)
+
+If you have the repo locally, use the built-in discovery utility first, then install with `npx skills`:
+
+```bash
+./scripts/find-a-skill.sh --keyword pricing --type interactive
+npx skills add deanpeters/Product-Manager-Skills --skill finance-based-pricing-advisor -a codex -g
+```
+
+This gives you better local filtering before install.
+
+### Discover Skills Without Cloning
+
+If you do not want to clone this repo:
+
+1. Search marketplace skills:
+   ```bash
+   npx skills find pricing
+   ```
+2. List available skills in this repo:
+   ```bash
+   npx skills add deanpeters/Product-Manager-Skills --list
+   ```
+3. Install the one you want:
+   ```bash
+   npx skills add deanpeters/Product-Manager-Skills --skill <skill-name> -a codex -g
+   ```
+
+You can also browse on [skills.sh](https://skills.sh/) and copy the command from each skill page.
+
+---
+
 ## Troubleshooting
 
 - **Codex cannot find the file**: confirm repo/branch selection and exact case-sensitive path.
@@ -73,3 +143,5 @@ Using skills/<skill-name>/SKILL.md:
 - [Codex in ChatGPT](https://openai.com/index/introducing-codex/)
 - [Getting started with Codex](https://help.openai.com/en/articles/11096431-getting-started-with-codex)
 - [Apps in ChatGPT (GitHub connection)](https://help.openai.com/en/articles/11487775-connectors-in-chatgpt/)
+- [Skills homepage](https://skills.sh/)
+- [Skills CLI docs](https://skills.sh/docs/cli)

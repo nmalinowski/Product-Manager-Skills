@@ -72,6 +72,48 @@ You can install skills in Claude's global skills directory for access from any p
 
 Claude will automatically find skills in `~/.claude/skills/`.
 
+### Installing via skills.sh (Optional)
+
+If you prefer marketplace-style install, you can discover and install without cloning this repo.
+
+1. **Search the marketplace**:
+   ```bash
+   npx skills find product management
+   ```
+
+2. **List skills in this repo**:
+   ```bash
+   npx skills add deanpeters/Product-Manager-Skills --list
+   ```
+
+3. **Install directly for Claude Code**:
+   ```bash
+   npx skills add deanpeters/Product-Manager-Skills --skill user-story -a claude-code -g
+   ```
+
+4. **Confirm what is installed for Claude Code**:
+   ```bash
+   npx skills list -a claude-code
+   ```
+
+5. **Use in Claude Code**:
+   ```bash
+   claude "Use the user-story skill to write stories for checkout"
+   ```
+
+If you are on an older CLI that does not support `--agent`, install first, then copy manually:
+
+```bash
+npx skills add deanpeters/Product-Manager-Skills@user-story
+mkdir -p ~/.claude/skills
+cp -R ~/.codex/skills/user-story ~/.claude/skills/
+```
+
+Alternative install syntax (also shown on skills.sh pages):
+   ```bash
+   npx skills add deanpeters/Product-Manager-Skills@user-story
+   ```
+
 <a id="github-zip-install"></a>
 ### Installing from GitHub ZIP (Claude Desktop or Claude Web)
 
