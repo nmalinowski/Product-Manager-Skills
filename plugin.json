@@ -1,0 +1,10 @@
+{
+  "name": "product-manager-skills",
+  "version": "1.0.0",
+  "description": "Product management skill library covering discovery, strategy, planning, and delivery workflows.",
+  "author": {
+    "name": "nmalinowski"
+  },
+  "license": "MIT",
+  "skills": "skills/"
+}
